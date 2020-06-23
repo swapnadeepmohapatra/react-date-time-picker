@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Styles from "./index.module.css";
 
-const list = ["10", "15", 20, 25, 30, 35, 40, 45, 50, 55, "00", "05"];
+const list = ["15", 20, 25, 30, 35, 40, 45, 50, 55, "00", "05", "10"];
 
-function TimeMinute({ selectedHour }) {
+function TimeMinute({ selectedHour, changeState, setMinute }) {
   const [selectedMinute, setSelectedMinute] = useState();
 
   return (
@@ -50,7 +50,8 @@ function TimeMinute({ selectedHour }) {
           <button
             disabled={!selectedMinute}
             onClick={() => {
-              alert(selectedMinute);
+              setMinute(selectedMinute);
+              changeState();
             }}
           >
             OK

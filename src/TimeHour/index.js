@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Styles from "./index.module.css";
 
-function TimeHour() {
+function TimeHour({ changeState, setHour }) {
   const [selectedHour, setSelectedHour] = useState();
   const [selectedFormat, setSelectedFormat] = useState(true);
 
@@ -50,7 +50,9 @@ function TimeHour() {
                 {list.map((item, index) => {
                   return (
                     <li
-                      className={selectedHour === item ? "selectedTime" : null}
+                      className={
+                        selectedHour === item ? `${Styles.selectedTime}` : null
+                      }
                       onClick={() => {
                         setSelectedHour(item);
                       }}
@@ -74,7 +76,8 @@ function TimeHour() {
           <button
             disabled={!selectedHour}
             onClick={() => {
-              alert(selectedHour);
+              setHour(selectedHour);
+              changeState();
             }}
           >
             SAVE

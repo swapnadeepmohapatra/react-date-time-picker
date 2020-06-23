@@ -1,0 +1,169 @@
+.containerCalender * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.containerCalender {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  width: 27rem;
+  background-color: #ffffff;
+  box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.3), 0px 0px 24px rgba(0, 0, 0, 0.22);
+  border-radius: 2px;
+  padding-bottom: 1rem;
+}
+
+.selectDate {
+  /* width: 100%; */
+  height: 7rem;
+  background-color: #1665d8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+.selectDate p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+.selectDate h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 31px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.month {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.month h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 1rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+  color: #6e6e6e;
+}
+
+.weekdays div {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(26.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+  font-weight: bold;
+}
+
+.days div {
+  font-size: 1rem;
+  width: calc(26.2rem / 7);
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today),
+.days div:hover:not(.selected) {
+  background-color: rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prevDate,
+.nextDate {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #1665d8;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.selected {
+  background-color: #f0ad24;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.okayCancelButtons {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.okayCancelButtons button:disabled {
+  color: #a6a6a6;
+}
+
+.okayCancelButtons button {
+  outline: 0;
+  border: 0;
+  background-color: #ffffff;
+  text-align: center;
+  color: #1665d8;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 10px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
