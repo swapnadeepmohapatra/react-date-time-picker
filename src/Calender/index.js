@@ -8,7 +8,6 @@ const monthsList = [];
 const dateList = [];
 const daysList = [[], []];
 const currentDate = new Date();
-const weekDays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 const months = [
   "January",
   "February",

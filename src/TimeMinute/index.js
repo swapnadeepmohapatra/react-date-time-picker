@@ -1,7 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Styles from "./index.module.css";
 
-const list = ["15", 20, 25, 30, 35, 40, 45, 50, 55, "00", "05", "10"];
+const list = [
+  "15",
+  "20",
+  "25",
+  "30",
+  "35",
+  "40",
+  "45",
+  "50",
+  "55",
+  "00",
+  "05",
+  "10",
+];
 
 function TimeMinute({ selectedHour, changeState, setMinute }) {
   const [selectedMinute, setSelectedMinute] = useState();

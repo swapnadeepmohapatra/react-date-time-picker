@@ -6,8 +6,8 @@ function TimeHour({ changeState, setHour }) {
   const [selectedFormat, setSelectedFormat] = useState(true);
 
   const list = selectedFormat
-    ? [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2]
-    : [15, 16, 17, 18, 19, 20, 21, 22, 23, "00", 13, 14];
+    ? ["3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "1", "2"]
+    : ["15", "16", "17", "18", "19", "20", "21", "22", "23", "00", "13", "14"];
 
   return (
     <div className={Styles.app}>
