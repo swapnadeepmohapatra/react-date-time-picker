@@ -67,7 +67,7 @@ function TimeMinute({ selectedHour, changeState, setMinute }) {
               changeState();
             }}
           >
-            OK
+            CONFORM MINUTE
           </button>
         </div>
       </div>

@@ -218,7 +218,7 @@ export default function Calender({ setDate, changeState }) {
               changeState();
             }}
           >
-            OK
+            SAVE
           </button>
         </div>
       </div>
